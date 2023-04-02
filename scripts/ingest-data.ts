@@ -40,13 +40,6 @@ export const run = async () => {
       textKey: 'text',
     });
   } catch (error: any) {
-    /*
-    if (error.response) {
-      console.log(error.response.data);
-    } else {
-      console.log(error.message);
-    }
-    */
     const data = error.response ? error.response.data : error.message;
     console.log(data);
     console.log(error.request.headers);
